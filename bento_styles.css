@@ -1,0 +1,389 @@
+html,
+body{
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   overflow: hidden;
+}
+
+
+
+body{
+display:flex;
+justify-content: center;
+background-color: #E2E2B6;
+ transform: scale(0.9);
+ transform-origin: 0 0;
+padding-top: 65px;
+padding-left: 75px;
+opacity: 1;
+background: radial-gradient(circle, transparent 20%, #E2E2B6 20%, #E2E2B6 80%, transparent 80%, transparent), 
+radial-gradient(circle, transparent 20%, #E2E2B6 20%, #E2E2B6 80%, transparent 80%, transparent) 10px 10px, 
+linear-gradient(#03346E 0.8px, transparent 0.8px) 0 -0.4px, 
+linear-gradient(90deg, #03346E 0.8px, #E2E2B6 0.8px) -0.4px 0;
+background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
+
+ }
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8,1fr);
+    gap: 1rem;
+    margin: 0 0 0 0;
+    padding: 15px;
+    height: 600px;
+}
+.item{
+   display:flex;
+   background-color: #6EACDA;
+   font-size: xx-large;
+   font-weight: 800;
+   border: solid 2px #E2E2B6;
+   border-radius: 10px;
+   height: 100%;
+   transition: filter 0.5s ease-in-out /*border-color 1s*/
+  
+}
+
+.item:hover{
+    filter: drop-shadow(0 0 0.75rem #03346E);
+    /*border-color: #021526;
+    border-radius: 10px;*/
+}
+
+/* Welcome Bento*/
+.welcome{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items:center ;
+    grid-column-start: 1;
+    grid-column: span 2;
+    grid-row-start: 1;
+    grid-row: span 4;
+     
+}
+
+.headshot{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: 60px;
+}
+
+.welcometext{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    width: fit-content;
+    justify-content: flex-start;
+    padding:25px 25px 25px 5px;
+    text-align: left;
+}
+
+.welcometext > h1{
+    font-family: 'Boska', serif;
+    font-style:italic;
+    font-size: 45px;
+    margin:0px;
+    padding: 15px  15px 0 5px;
+    width: fit-content;
+    
+    
+    
+}
+
+.welcometext > h3{
+    margin: 0;
+    font-size: small;
+    text-align: justify;
+
+}
+
+.welcomeh31{
+    padding: 10px 0 10px 15px;
+    font-family: 'General Sans', sans-serif;
+    font-size: medium;
+    font-weight: 400;
+    width:fit-content;
+    
+}
+
+.welcomeh32{
+    padding: 5px 0 10px 15px;
+    font-family: 'General Sans', sans-serif;
+    font-size: medium;
+    font-weight: 400;
+    width:fit-content;
+}
+
+
+.about{
+    display: flex;
+    grid-column-start:4;
+    grid-row-start: 1;
+    grid-row-end: 7 ;
+}
+
+
+.abouttext{
+    display:flex;
+    flex-direction: column;
+}
+
+.abouttext > h3{
+    font-family: 'Boska', serif;
+    font-style:italic;
+    font-size: 25px;
+    margin:0px;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-weight: 800;
+}
+
+.abouttext > p{
+   font-family: 'General Sans', sans-serif;
+    font-size: small;
+    font-weight: 500;
+    width: 200px;
+    padding:0 0 0 15px;
+    margin:0;
+}
+
+.aboutlistitem{
+   font-family: 'General Sans', sans-serif;
+    font-size: small;
+    font-weight: 500;
+    width: 200px;
+    padding:5px 0 0 15px;
+    margin:0;
+
+}
+
+.listparent{
+    margin: 0 0 0
+}
+
+
+.contact{
+    display: flex;
+    grid-column-start:1;
+    grid-row: 5 / 9;
+}
+
+
+
+.contactmetext > h2{
+    font-family: 'Boska', serif;
+    font-style:italic;
+    font-size: 25px;
+    margin:0 0 0 0;
+    padding-top: 15px;
+    padding-left: 10px;
+
+}
+
+.contactmetext > h3{
+    font-family: 'General Sans', sans-serif;
+    font-size: large;
+    font-weight: 400;
+    margin:0px;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-weight: 800;
+}
+    
+
+.contactmetext > p{
+    font-family: 'General Sans', sans-serif;
+    font-size: small;
+    font-weight: 500;
+    padding: 0 0 0 15px;
+    margin: 0;
+
+}
+
+.contactlinks{
+    text-decoration: none;
+    color: black;
+}
+.contactlinks:hover{
+    color: #03346E;
+
+}
+
+.contactlinks:visited{
+    color:#E2E2B6;
+}
+
+
+
+
+.portfolio{
+    display: flex;
+    grid-column: 3 / 3;
+    grid-row: 5 / 9;
+  
+}
+
+
+
+.portfoliotext > h3{
+    font-family: 'Boska', serif;
+    font-style:italic;
+    font-size: 25px;
+    margin:0px;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-weight: 800;
+    
+}
+
+.portfoliodes{
+    font-size: medium;
+    margin-left: 20px;
+}
+
+
+.now{
+    display: flex;
+    grid-column-start:2;
+    grid-row: 5 / 9;
+
+}
+
+
+
+.nowtext > h2{
+    font-family: 'Boska', serif;
+    font-style:italic;
+    font-size: 25px;
+    margin:0 0 0 0;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.nowtext > h3{
+    font-family: 'General Sans', sans-serif;
+    font-size: large;
+    font-weight: 400;
+    margin:0px;
+    padding-top: 5px;
+    padding-left: 15px;
+    font-weight: 800;
+}
+
+.updated{
+    font-family: 'General Sans', sans-serif;
+    font-size: small;
+    font-weight: 400;
+    font-weight: 500;
+    width: 200px;
+    padding-left: 15px;
+    margin: 0;
+}
+
+.nowtext > h3 > p{
+    font-family: 'General Sans', sans-serif;
+    font-size: small;
+    font-weight: 500;
+    width: 200px;
+    margin:0;
+}
+
+
+
+.resume{
+    display: flex;
+    grid-column: 3 / 3;
+    grid-row: 1 / span 4;  
+}
+
+.resumetext > h2{
+    font-family: 'Boska', serif;
+    font-style:italic;
+    font-size: 25px;
+    margin:0 0 0 0;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.resumetext > h3{
+     font-family: 'General Sans', sans-serif;
+    font-size: large;
+    font-weight: 400;
+    margin:0px;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-weight: 800;
+}
+
+.resumetext > h3 > p{
+ font-family: 'General Sans', sans-serif;
+    font-size: small;
+    font-weight: 500;
+    width: 200px;
+    padding:0;
+    margin:0;
+}
+
+.resumelink{
+    text-decoration: none;
+    color: black;
+}
+
+
+.resumelink:visited{
+    color: #E2E2B6;
+}
+
+.resumelink:hover{
+    color: #03346E;
+    cursor: grab;
+}
+
+.resumelink:active{
+    cursor:grabbing
+
+}
+
+.shoes{
+    display: flex;
+    grid-column: 4/5;
+    grid-row: 7/9;
+}
+
+
+.shoestext > h3{
+    font-family: 'Boska', serif;
+    font-style:italic;
+    font-size: 25px;
+    margin:0px;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-weight: 800;
+}
+
+.shoestext > p {
+    font-family: 'General Sans', sans-serif;
+    font-size: small;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 0 0 15px;
+}
+
+.shoesordered{
+    margin: 0;
+    padding:0px 0 0 40px;
+}
+
+.shoelist {
+    font-family: 'General Sans', sans-serif;
+    font-size: small;
+    font-weight: 400;
+    padding-bottom: 0;
+}
+
+/*Resume Page*/

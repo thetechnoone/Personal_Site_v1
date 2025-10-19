@@ -1,0 +1,108 @@
+html,
+body{
+    height: 100%;
+    width: 100%;
+    margin:0px;
+} 
+
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: #E2E2B6;
+opacity: 1;
+background: radial-gradient(circle, transparent 20%, #E2E2B6 20%, #E2E2B6 80%, transparent 80%, transparent), 
+radial-gradient(circle, transparent 20%, #E2E2B6 20%, #E2E2B6 80%, transparent 80%, transparent) 10px 10px, 
+linear-gradient(#03346E 0.8px, transparent 0.8px) 0 -0.4px, 
+linear-gradient(90deg, #03346E 0.8px, #E2E2B6 0.8px) -0.4px 0;
+background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
+
+}
+
+
+
+
+.hello{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: auto;
+   /* background-color: #6EACDA; */
+   color:aliceblue;
+   grid-column-start: 1;
+   grid-column-end: 3;
+   grid-row-start:1;
+   grid-row-end:4;
+   border-radius: 20px;
+
+}
+
+.shirt{
+    width: 300x;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.sticker{
+   width: 400x;
+   height: 400px;
+   object-fit: cover;
+   border-radius: 5%;
+   grid-column-start: 4;
+   grid-column-end: 6;
+   grid-row-start:4;
+   grid-row-end:6 ;
+}
+
+.sticker-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: auto;
+   border-radius: 20px;
+   
+   grid-column-start: 4;
+   grid-column-end: 6;
+   grid-row-start:4;
+   grid-row-end:6 ;
+
+}
+
+.logo-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: auto;
+   background-color: #6EACDA;
+   
+}
+
+.logo{
+    width: 400x;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.canvas{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);
+    width:100%;
+    height:100%;
+    padding-top: 20px;
+    padding-left: 20px;
+
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8,1fr);
+    gap: 1rem;
+    margin: 0 0 0 0;
+    padding: 15px;
+    height: 600px; */
+
+   
+};
+
+
